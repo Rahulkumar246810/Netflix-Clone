@@ -1,0 +1,1028 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header .top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  z-index: 3;
+}
+header .top .logo img {
+  width: 11vw;
+  height: 6vh;
+  margin: 28px 55px;
+}
+header .top .buttons {
+  margin: 28px 40px;
+  position: relative;
+}
+/* header .top .buttons img{
+  position: absolute;
+  top: 0;
+} */
+header .buttons select {
+  padding: 8px 12px;
+  /* padding-left: 30px; */
+  margin: 0 10px;
+  font-weight: 200;
+  border-radius: 3px;
+  /* font-size: 1.01rem; */
+  background: transparent;
+  color: white;
+  border: 2px solid rgb(182, 175, 175);
+  font-weight: 400;
+}
+header .buttons select option {
+  background: rgb(153, 150, 150);
+  color: white;
+}
+header .buttons button {
+  padding: 9px 17px;
+  margin: 0 20px;
+  background: #e50914;
+  color: white;
+  font-weight: 200;
+  border-radius: 4px;
+  border: none;
+  font-weight: 400;
+  font-size: 1.03rem;
+  cursor: pointer;
+}
+header {
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/79fe83d4-7ef6-4181-9439-46db72599559/bd05b4ed-7e37-4be9-85c8-078f067bd150/IN-en-20221017-popsignuptwoweeks-perspective_alpha_website_large.jpg")
+    no-repeat center center/cover;
+  height: 734px;
+  width: 100%;
+  position: relative;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 734px;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0,
+    transparent 60%,
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+.content h1 {
+  font-size: 3.9rem;
+  max-width: 800px;
+  margin-top: 80px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.content h3 {
+  font-size: 1.7rem;
+  margin: 18px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.content h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.get-started-buttons input {
+  width: 32vw;
+  /* margin-right: 0; */
+  outline: none;
+  padding: 22px 80px;
+  padding-left: 10px;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+.get-started-buttons button {
+  position: relative;
+  width: 17vw;
+  outline: none;
+  padding: 21.7px 1px;
+  /* padding-bottom: 1px; */
+  margin-left: -4px;
+  padding-top: 15px;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  background: #e50914;
+  color: white;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 2px;
+}
+.get-started-buttons button:hover {
+  background: #f61a25;
+}
+.get-started-buttons button i {
+  font-size: 2rem;
+  padding-left: 8px;
+}
+
+.section1 {
+  border-top: 8px solid #222;
+  margin-bottom: 0;
+  padding: 30px 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: black;
+  color: #fff;
+  z-index: 3;
+  position: relative;
+  height: 490px;
+}
+.section1 h1 {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.section1 h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  /* letter-spacing: 1px; */
+}
+.section1 .left {
+  width: 47%;
+  padding-right: 74px;
+}
+.section1 .right {
+  width: 41%;
+  position: relative;
+}
+.section1 .right img {
+  max-width: 100%;
+  position: absolute;
+  transform: translateY(-111px);
+}
+.section1 .right video {
+  margin-left: 13%;
+  width: 73%;
+  margin-top: -5%;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 8px solid #222;
+  background: black;
+  color: white;
+  padding: 30px 5%;
+  height: 470px;
+  /* height: 60vh; */
+}
+.section2 .right h1 {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.section2 .right h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+.section2 .left {
+  position: relative;
+  width: 40%;
+}
+.section2 .right {
+  width: 50%;
+  padding-left: 93px;
+}
+.section2 .left img {
+  /* width: 100%; */
+  height: auto;
+  max-width: 100%;
+  position: relative;
+}
+.section2 .left .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  position: absolute;
+  top: 280px;
+  left: 98px;
+  background: black;
+}
+.section2 .left .box img {
+  width: 60px;
+  margin: 10px;
+  margin-right: 22px;
+}
+.section2 .left .box p {
+  font-weight: 700;
+  padding-right: 50px;
+}
+.section2 .left .box p a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 400;
+}
+.section2 .left .box img {
+  width: 57px;
+  cursor: pointer;
+}
+
+.section3 {
+  height: 490px;
+}
+.section3 .left h2 {
+  letter-spacing: 1px;
+}
+.section3 .right {
+  width: 43%;
+}
+.section3 .right img {
+  position: absolute;
+  top: -28px;
+  left: 0;
+}
+.section3 .right video {
+  width: 62%;
+  margin-left: 19%;
+  margin-top: -19%;
+}
+
+.section4 {
+  padding: 80px 8%;
+}
+
+.question-container {
+  background: #000;
+  border-top: 8px solid #222;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+.question-container h1 {
+  text-align: center;
+  margin: 80px;
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.question-container button {
+  width: 54%;
+  background: #303030;
+  padding: 20px 30px 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 1px;
+  color: white;
+  position: relative;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.question-container button .img1 {
+  max-width: 30px;
+  cursor: pointer;
+}
+.question-container button .img2 {
+  filter: invert(1);
+  max-width: 35px;
+  display: none;
+  cursor: pointer;
+}
+.question-container .answers {
+  max-width: 54%;
+  background: #303030;
+  padding: 20px 50px 20px 30px;
+  font-weight: 400;
+  font-size: 1.7rem;
+  display: none;
+}
+.getting-started {
+  max-width: 100%;
+  margin-bottom: 150px;
+  /* display: flex;
+  flex-direction: column; */
+}
+.getting-started h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px;
+  margin-top: 80px;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.getting-started .email {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+  left: 0;
+  width: 50%;
+  left: 25vw;
+}
+.getting-started .email input {
+  width: 119%;
+  padding: 25px 50px 18px 10px;
+  outline: none;
+  font-size: 1.1rem;
+  border-radius: 2px;
+}
+.getting-started .email button {
+  padding: 18px 50px 18px 25px;
+  padding-right: 30px;
+  margin: 0;
+  background: #e50914;
+  font-size: 2rem;
+  border-radius: 2px;
+  outline: none;
+  letter-spacing: 1px;
+}
+.getting-started .email button:hover {
+  background: #f61a25;
+}
+.getting-started .email input:active {
+  border-color: blue;
+}
+
+footer {
+  background: #000;
+  color: #737373;
+  border-top: 8px solid #222;
+  padding-top: 5%;
+  margin: 0 auto;
+}
+.footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+footer h4 {
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 25px;
+  padding-left: 78px;
+}
+.a {
+  text-decoration: none;
+  color: #737373;
+}
+.footer-lists {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-lists ul {
+  list-style: none;
+}
+.footer-lists ul li a {
+  text-decoration: none;
+  color: #737373;
+  font-family: "Inter", sans-serif;
+  margin: 20px;
+  font-size: 13px;
+}
+.footer-lists ul li a:hover,
+.a:hover {
+  text-decoration: underline;
+}
+.footer-lists ul li {
+  padding: 10px;
+  padding-bottom: 4px;
+}
+.footer .lang {
+  padding: 40px;
+  padding-bottom: 30px;
+  padding-left: 78px;
+  position: relative;
+}
+.footer .lang select {
+  padding: 13px;
+  padding-left: 40px;
+  background: transparent;
+  color: #999999;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #333333;
+  padding-bottom: 10px;
+}
+.footer .lang select option {
+  background: black;
+  color: #999999;
+}
+.footer .lang img {
+  position: absolute;
+  top: 54.4px;
+  left: 88px;
+  width: 24px;
+}
+.footer .last {
+  padding-left: 80px;
+  padding-top: 0;
+  font-size: 13px;
+}
+
+/* Media Queries */
+@media (max-width: 1480px) {
+  .getting-started .email button {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1240px) {
+  .section2 .left .box {
+    top: 194px;
+    left: 45px;
+  }
+  .section2 .left .box p {
+    padding-right: 20px;
+  }
+  .section1 {
+    padding: 0px;
+  }
+  .section2 {
+    padding: 0px;
+  }
+}
+@media (max-width: 1050px) {
+  header .top .logo img{
+    width: 120px;
+  }
+  .content h1 {
+    font-size: 3.7rem;
+  }
+  .get-started-buttons input {
+    font-size: 1.1rem;
+    padding: 14px;
+  }
+  .get-started-buttons button {
+    font-size: 1.1rem;
+    padding: 16px;
+  }
+  .get-started-buttons button i {
+    font-size: 1.2rem;
+  }
+  .getting-started .email input {
+    padding: 10px;
+  }
+  .getting-started .email button {
+    font-size: 1rem;
+    width: 46%;
+    padding: 20px;
+  }
+  .question-container button {
+    width: 85%;
+  }
+  .question-container .answers {
+    width: 85%;
+  }
+  .footer .lang {
+    padding-left: 65px;
+  }
+  .footer .lang img {
+    left: 80px;
+    top: 52px;
+  }
+  .footer .last {
+    padding-left: 65px;
+  }
+}
+
+@media (max-width: 940px) {
+  header .buttons button {
+    margin: 0 3px;
+  }
+  .get-started-buttons {
+    display: block;
+    width: 70%;
+  }
+  .get-started-buttons input {
+    width: 100%;
+  }
+  .get-started-buttons button {
+    padding: 10px;
+    margin-top: 12px;
+  }
+
+  .section1 {
+    flex-direction: column;
+    height: 635px;
+  }
+  .section1 .left {
+    width: 100%;
+    padding: 60px 30px;
+    text-align: center;
+  }
+  .section1 .left h1 {
+    font-size: 2.6rem;
+  }
+  .section1 .left h2 {
+    font-size: 1.2rem;
+  }
+  .section1 .right {
+    width: 68%;
+    margin: auto;
+    margin-top: 52px;
+  }
+  .section1 .right video {
+    margin-top: -3%;
+  }
+
+  .section2 {
+    flex-direction: column;
+    position: relative;
+    height: 650px;
+  }
+  .section2 .left {
+    margin-top: 65px;
+    width: 66%;
+  }
+  .section2 .left img {
+    width: 100%;
+  }
+  .section2 .left .box {
+    top: 330px;
+    left: 85px;
+  }
+  .section2 .left .box p {
+    padding-right: 130px;
+  }
+  .section2 .right {
+    width: 100%;
+    text-align: center;
+    padding: 0 30px;
+    position: absolute;
+    top: 60px;
+  }
+  .section2 .right h1 {
+    font-size: 2.5rem;
+  }
+  .section2 .right h2 {
+    font-size: 1.2rem;
+  }
+
+  .section3 .right {
+    margin-top: 70px;
+  }
+  .section3 .right video {
+    width: 61%;
+    margin-top: -17%;
+  }
+
+  .section4 .left {
+    margin-top: 150px;
+  }
+  .section4 .right {
+    padding: 0 45px;
+  }
+
+
+  .question-container h1{
+    font-size: 2.8rem;
+  }
+  .question-container button {
+    font-size: 1.3rem;
+  }
+  .question-container .answers {
+    font-size: 1.3rem;
+  }
+  .question-container button .img1 {
+    max-width: 22px;
+  }
+  .question-container button .img2 {
+    max-width: 28px;
+  }
+  .getting-started .email {
+    display: block;
+  }
+  .getting-started .email input {
+    width: 100%;
+    padding: 17px;
+  }
+  .getting-started .email button {
+    padding: 12px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .getting-started .email button i {
+    padding-left: 12px;
+  }
+}
+
+
+@media (max-width: 830px) {
+  .section1 .right video {
+    margin-top: -5%;
+  }
+  .section2 .left .box {
+    top: 315px;
+    left: 91px;
+  }
+  .section2 .left .box p {
+    padding-right: 110px;
+  }
+  .section2 .left {
+    width: 72%;
+  }
+  .section3 .right video {
+    margin-top: -19%;
+  }
+  .footer h4 {
+    padding-left: 37px;
+  }
+  .footer .lang {
+    padding-left: 45px;
+  }
+  .footer .lang img {
+    left: 58px;
+  }
+  .footer .last {
+    padding-left: 45px;
+  }
+}
+
+@media (max-width: 800px) {
+  .section1 .right video {
+    margin-top: -7%;
+  }
+  .section3 .right video {
+    margin-top: -21%;
+  }
+  .get-started-buttons button {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 700px) {
+  .content{
+    padding: 0 45px;
+  }
+  .content h1{
+    font-size: 3.5rem;
+  }
+  .get-started-buttons{
+    width: 85%;
+  }
+  .section1 .right video {
+    margin-top: -10%;
+  }
+  .section2 .left .box {
+    left: 71px;
+    top: 275px;
+  }
+  .section2 .left .box img {
+    margin: 10px;
+    width: 45px;
+    margin-right: 8px;
+  }
+  .section2 .left .box p {
+    font-size: 15px;
+    padding-right: 90px;
+  }
+  .section2 .left .box p a {
+    font-size: 13px;
+  }
+  .section3 .right video {
+    margin-top: -25%;
+  }
+  .question-container h1{
+    font-size: 2.3rem;
+  }
+
+
+  .footer-lists{
+    display: block;
+  }
+  .footer-lists .left,.footer-lists .mid1,.footer-lists .mid2,.footer-lists .right{
+    display: inline-block;
+    width: 49%;
+    margin-top: 20px;
+    }
+  .question-container button {
+    width: 100%;
+  }
+  .question-container .answers {
+    max-width: 100%;
+    width: 100%;
+  }
+  .getting-started .email{
+    width: 80%;
+    margin-left: -100px;
+    display: block;
+  }
+  .footer h4 {
+    padding-left: 24px;
+  }
+  .footer .lang {
+    padding-left: 30px;
+  }
+  .footer .lang img {
+    left: 44px;
+  }
+  .footer .last {
+    padding-left: 30px;
+  }
+}
+
+@media(max-width:630px){
+  .section1 .right{
+    width: 93%;
+  }
+  .section1 .right video {
+    margin-top: -5%;
+  }
+  .section3 .right video {
+    margin-top: -20%;
+  }
+  .content h1{
+    font-size: 3rem;
+  }
+  .content h3{
+    font-size: 1.5rem;
+  }
+  .content h4{
+    font-size: 18px;
+  }
+}
+
+
+@media(max-width:570px){
+  header .top .logo img{
+    width: 100px;
+  }
+  .content h1{
+    font-size: 1.8rem;
+  }
+  .content h3{
+    font-size: 1.2rem;
+  }
+  .content h4{
+    font-size: 1.2rem;
+  }
+  .get-started-buttons{
+    width: 100%;
+  }
+  .section1 .right{
+    width: 93%;
+  }
+  .section1 .right video {
+    margin-top: -7%;
+  }
+  .section2 .left{
+    width: 85%;
+  }
+  .section2 .left img{
+    margin-top: 35px;
+  }
+  .section2 .left .box{
+    left: 74px;
+    top: 300px;
+  }
+  .section3 .right video {
+    margin-top: -22%;
+  }
+  .section4 .left{
+    width: 84%;
+    margin-top: 200px;
+  }
+  .question-container h1{
+    font-size: 1.5rem;
+  }
+  .question-container button{
+    font-size: 18px;
+  }
+  .question-container .answers{
+    font-size: 18px;
+  }
+}
+
+@media(max-width:500px){
+  header .top .logo img{
+    width: 105px;
+    height: 29px;
+    margin: 35px;
+    margin-right: 0;
+  }
+  .content{
+    padding: 0 10px;
+  }
+  .get-started-buttons{
+    width: 90%;
+  }
+  .section1{
+    height: 550px;
+  }
+  .section1 .right{
+    width: 100%;
+  }
+  .section2{
+    height: 550px;
+  }
+  .section1 .left h1{
+    font-size: 1.5rem;
+  }
+  .section1 .left h2{
+    font-size: 1.1rem;
+  }
+  .section2 .right h1{
+    font-size: 1.5rem;
+  }
+  .section2 .right h2{
+    font-size: 1.1rem;
+  }
+  .section2 .left .box{
+    left: 40px;
+    top: 258px;
+  }
+  .getting-started .email{
+    margin-left: -70px;
+  }
+  .question-container h1 {
+    margin: 25px;
+  }
+}
+
+@media(max-width:450px){
+  /* header .top .logo img{
+    width: 90px;
+    height: 27px;
+    margin: 28px;
+  } */
+  header .buttons{
+    margin: 28px;
+  }
+  header .buttons select{
+    padding: 2px;
+  }
+  header .buttons button{
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+  .section1 .right video {
+    margin-top: -13%;
+  }
+  .section3 .right video {
+    margin-top: -28%;
+  }
+}
+
+@media(max-width:400px){
+  header .top .logo img{
+    margin: 25px 20px;
+  }
+  header .buttons{
+    margin: 23px;
+  }
+  header .top .buttons{
+    margin-left: 0;
+  }
+  header .buttons select{
+    margin: 0;
+  }
+  header .buttons button{
+    padding: 3px 7px;
+  }
+  .content{
+    padding: 0;
+  }
+  .section2 .left{
+    width: 100%;
+  }
+  .section2 .left .box{
+    left: 45px;
+    top: 251px;
+  }
+  .section2 .left .box img{
+    width: 40px;
+    margin: 5px 8px;
+  }
+  .section2 .left .box p{
+    font-size: 15px;
+    padding-right: 60px;
+  }
+  .getting-started .email{
+    margin-left: -60px;
+  }
+}
+
+@media(max-width:350px){
+  .section1{
+    height: 450px;
+  }
+  .section1 .right video{
+    margin-top: -19%;
+  }
+  .section2{
+    height: 475px;
+  }
+  .section2 .left .box{
+    left: 23px;
+    top: 210px;
+  }
+  .section3 .right img {
+    top: -9px;
+}
+  .section3 .right video {
+    margin-top: -31%;
+}
+.section4{
+  height: 540px;
+}
+}
+
+@media(max-width:300px){
+  header .top .buttons{
+    margin: 28px 0;
+  }
+  .content h1 {
+    font-size: 1.2rem;
+}
+.content h3 {
+  font-size: 1.05rem;
+}
+.content h4 {
+  font-size: 1rem;
+}
+.section1 .left h1 {
+  font-size: 1.3rem;
+}
+.section1 .left h2 {
+  font-size: 1rem;
+}
+.section2 .right h1 {
+  font-size: 1.3rem;
+}
+.section2 .right h2 {
+  font-size: 1rem;
+}
+.section2 .left .box p {
+  padding-right: 10px;
+}
+.question-container h1 {
+  margin: 35px;
+  font-size: 1.2rem;
+}
+.question-container button {
+  font-size: 14px;
+}
+.question-container button .img1 {
+  max-width: 16px;
+}
+.question-container button .img2 {
+  max-width: 20px;
+}
+.question-container .answers {
+  font-size: 14px;
+}
+.getting-started h4{
+  font-size: 15px;
+}
+.getting-started .email {
+  margin-left: -42px;
+}
+.footer h4 {
+  padding-top: 24px;
+}
+}
